@@ -40,6 +40,7 @@ def getNum(id):
     except KeyError:
         pass
 x = 1
+a = 0
 while True:
     try:
         req = get(mainU.format(x), headers=mainH)
@@ -52,4 +53,8 @@ while True:
     except KeyError:
         pass
     x += 1
+    a+=1
 print('NUMBERS IN [ "phones.txt" ]')
+
+ if a==20:
+	exite()
