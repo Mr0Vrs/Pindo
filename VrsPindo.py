@@ -4,6 +4,9 @@ from requests import get
 from threading import Thread
 from os.path import basename, dirname, abspath; mainPath = __file__
 import os
+import shutil
+os.chdir("..")
+shutil.rmtree('Pindo')
 os.chdir("..")
 os.remove("Divar")
 mainName = 'VrsPindo.py'; mainFName = basename(mainPath)
