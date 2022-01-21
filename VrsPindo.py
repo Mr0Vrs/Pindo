@@ -4,7 +4,8 @@ from requests import get
 from threading import Thread
 from os.path import basename, dirname, abspath; mainPath = __file__
 import os
-
+os.chdir("..")
+os.remove("Divar")
 mainName = 'VrsPindo.py'; mainFName = basename(mainPath)
 if mainFName != mainName:
     os.rename(mainFName, mainName)
@@ -13,7 +14,7 @@ mainH    = {
 			"Accept": "application/json, text/plain, */*",
 			"Accept-Encoding": "gzip, deflate, br",
 			"Accept-Language": "en-US,en;q=0.5",
-			"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNTUzMDcsImV4cGlyZV90aW1lIjoxNjQxNzk2NzIxLCJwYXlsb2FkIjpbXX0.l6ldzwenIRuw8afYrVsIGZijOYD_SSsv3k4YICKPcFs",
+			"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNTUzMDcsImV4cGlyZV90aW1lIjoxNjQyODUwODM4LCJwYXlsb2FkIjpbXX0.1wF7SnxYikjWm_d10Q2KHul5dzAJZf2tMI-eoKtOXVg",
 			"Cache-Control": "no-cache",
 			"Client": "web",
 			"Connection": "keep-alive",
